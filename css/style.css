@@ -1,0 +1,68 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins&display=swap')
+
+  
+
+
+.font-poppins {
+  font-family: "Antonio", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  
+}
+  
+
+
+  
+ 
+.poppins-style{
+    .poppins-regular {
+        
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .poppins-bold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .poppins-extrabold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+      }
+      
+      .poppins-black {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+      
+      .poppins-medium-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+      }
+      
+      .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+}
+
+main{
+    background-image: url(/images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}

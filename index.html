@@ -4,16 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpha clash</title>
+    <!-- daisy -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- tailwind -->
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <section class="home">
+<body class=" oppins-style">
+   
+    <main class="min-h-screen bg-[#010313] text-white  ">
+<!-- home screen************************** -->
+        <section id="home-Screen" class="home min-h-screen  flex flex-col justify-center items-center  ">
 
-    </section>
-    <section class="play-Ground">
-        
-    </section>
-    <section class="score">
+      <div class="flex flex-col gap-6 items-center">
+        <h1 class="text-7xl antonio uppercase font-extrabold ">Alpha Clash Pro</h1>
+        <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <button onclick="play()" class="btn btn-white ">play Now</button>
+      </div>
 
-    </section>
+        </section>
+
+<!-- play ground*-******************************** -->
+<section id="play-Ground" class=" hidden">
+
+  <div class="flex flex-col justify-center items-center gap-10 pt-10">
+
+    <!-- screen -->
+    <div class="artboard artboard-horizontal phone-6 border-[20px] border-[#010313cc]  bg-[#ffffffB3] rounded-2xl">
+      <div class="flex justify-center">
+        <p class="bg-[#010332] px-6 pb-2 rounded-b-xl text-white">don`t watch keyboard while playing game</p>
+      </div>
+      <div class="flex justify-center items-center h-full ">
+        <p  id="current-Alphabet" class="text-black text-9xl font-bold uppercase">Y</p>
+      </div>
+    </div>
+
+
+    <!-- keyboard -->
+    <div class=" text-black">
+      <div class="flex justify-center gap-1 my-1 w-full">
+        <kbd id="q" class="kbd">q</kbd>
+        <kbd id="w" class="kbd">w</kbd>
+        <kbd id="e" class="kbd">e</kbd>
+        <kbd id="r" class="kbd">r</kbd>
+        <kbd id="t" class="kbd">t</kbd>
+        <kbd id="y" class="kbd">y</kbd>
+        <kbd id="u" class="kbd">u</kbd>
+        <kbd id="i" class="kbd">i</kbd>
+        <kbd id="o" class="kbd">o</kbd>
+        <kbd id="p" class="kbd">p</kbd>
+      </div> 
+      <div class="flex justify-center gap-1 my-1 w-full">
+        <kbd id="a" class="kbd">a</kbd>
+        <kbd id="s" class="kbd">s</kbd>
+        <kbd id="d" class="kbd">d</kbd>
+        <kbd id="f" class="kbd">f</kbd>
+        <kbd id="g" class="kbd">g</kbd>
+        <kbd id="h" class="kbd">h</kbd>
+        <kbd id="j" class="kbd">j</kbd>
+        <kbd id="k" class="kbd">k</kbd>
+        <kbd id="l" class="kbd">l</kbd>
+      </div> 
+      <div class="flex justify-center gap-1 my-1 w-full">
+        <kbd id="z" class="kbd">z</kbd>
+        <kbd id="x" class="kbd">x</kbd>
+        <kbd id="c" class="kbd">c</kbd>
+        <kbd id="v" class="kbd">v</kbd>
+        <kbd id="b" class="kbd">b</kbd>
+        <kbd id="n" class="kbd">n</kbd>
+        <kbd id="m" class="kbd">m</kbd>
+        <kbd id="/" class="kbd">/</kbd>
+      </div>
+    </div>
+
+    <!-- score -->
+    <div>
+      <button class="btn rounded-full bg-purple-400 text-white px-8">
+       life
+       <img src="images/shelter.png" class="h-8" alt="">
+       <span id="life-score">5</span>
+      </button>
+      <button class="btn rounded-full bg-purple-400 text-white px-8">
+        life
+        <img src="images/food.png" class="h-6" alt="">
+        <span id="current-scoure">0</span>
+       </button>
+    </div>
+  </div>
+</section>
+<!-- play ground score*-******************************** -->
+        <section id="final-score" class="score flex justify-center items-center min-h-screen hidden">
+          <div class=" text-white text-center rounded-md bg-[#ffffff33] p-4">
+            <h1 class="text-6xl"> <span class="font-extrabold">score: </span> <span id="last-score">14</span></h1>
+             
+            <button onclick="play()" class="btn text-xs  ">Play Aganin</button>
+            <p class="text-xl"> Lorem ipsum dolor sit amet.</p>
+           
+
+
+          </div>
+    
+        </section>
+    </main>
+
+
+    <script src="script/alpha-clash.js"></script>
+    <script src="script/Utility.js"></script>
+    <!-- <script src="script/practice.js"></script> -->
 </body>
 </html>
